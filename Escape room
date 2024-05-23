@@ -1,0 +1,58 @@
+import random 
+from time import sleep
+clear = lambda: print("\033c", end="", flush=True)
+#This is a single player game, escape room
+#random1 = random.choice(-)
+
+clear()
+print("Room 1")
+print("")
+while True:
+    action = input("What do you do? Box, left, right? ")
+    clear()
+
+    if action == "Box":
+        print("You walk towards the box and bend down to look at it")
+        print("The box is locked, it needs 3 numbers")
+
+        cod = input("What's the code? ")
+        if cod == "273":
+            clear()
+            break
+
+    if action == "Left":
+        while True:
+            action2 = input("What do you do? Go back, go to the table? ")
+            if action2 == "Table":
+                clear()
+                print("You go to the table, there seems to be some kind of message")
+                print("Up, up, left, down, right, down")
+                action3 = input ("Type back to go back ")
+                if action3 == "Back":
+                    break
+            
+            if action2 == "Back":
+                clear()
+                break
+
+    if action == "Right":
+        while True:
+            action4 = input("There seems to be something on the wall... Go back or check it out?")
+            if action4 == "Check":
+                clear()
+                print("There's a bunch of arrows...")
+
+                arrows = input("")
+                if arrows == "up up left down right down":
+                    clear()
+                    print("Some numbers appeared above the arrows..")
+                    print("273")
+                    break
+
+            if action4 == "Back":
+                break
+                
+
+print("You win!!!")
+
+
