@@ -1,0 +1,326 @@
+from time import sleep
+import random 
+clear = lambda: print("\033c", end="", flush=True)
+clear()
+
+def Role():
+    print("Everyone leave the area except...")
+    play = random.choice(Players)
+    print(play)
+    Players.remove(play)
+    sleep(10)
+    print(random1)
+    print(input("Just write anything to continue, bring everyone back in"))
+
+def Rol():
+    print("Everyone leave the area except...")
+    sleep(10)
+    play = random.choice(Players)
+    print(play)
+    print("You are out, try to fit in with the others")
+    Players.remove(play)
+
+
+
+
+
+Roles = []
+Players = []
+Fruit = ['Banana', 'Strawberry', 'Blueberry', 'Pineapple']
+Animal = ['Carrot', 'Cucumber', 'Brocoli', 'lettuce']
+Sport = ['Soccer', 'Baseball', 'Basketball']
+
+
+answer = input("How many players? (4-6) ")
+
+if answer == '4':
+    print('4 players')
+    player1 = input("Please enter the name of player 1: ")
+    Players.append(player1)
+
+    player2 = input("Please enter the name of player 2: ")
+    Players.append(player2)
+
+    player3 = input("Please enter the name of player 3: ")
+    Players.append(player3)
+
+    player4 = input ("Please enter the name of player 4: ")
+    Players.append(player4)
+
+if answer == '5':
+    print("5 players")
+
+    player1 = input("Please enter the name of player 1: ")
+    Players.append(player1)
+
+    player2 = input("Please enter the name of player 2: ")
+    Players.append(player2)
+
+    player3 = input("Please enter the name of player 3: ")
+    Players.append(player3)
+
+    player4 = input ("Please enter the name of player 4: ")
+    Players.append(player4)
+
+    player5 = input ("Please enter the name of player 5: ")
+    Players.append(player5)
+
+    Roles.append("5")
+
+if answer == '6':
+    print('6 players')
+    player1 = input("Please enter the name of player 1: ")
+    Players.append(player1)
+
+    player2 = input("Please enter the name of player 2: ")
+    Players.append(player2)
+
+    player3 = input("Please enter the name of player 3: ")
+    Players.append(player3)
+
+    player4 = input ("Please enter the name of player 4: ")
+    Players.append(player4)
+
+    player5 = input ("Please enter the name of player 5: ")
+    Players.append(player5)
+
+    player6 = input ("Please enter the name of player 6: ")
+    Players.append(player6)
+
+    Roles.append("6")
+
+clear()
+print(Players)
+print(Roles)
+clear()
+
+
+if answer == '4' :
+    print("Choose what you want the topic to be")
+    Choice = input("Fruit, Animal, Sports : ")
+
+    if Choice == 'Fruit':
+        random1 = random.choice(Fruit)
+        
+
+        print(Role())
+        sleep(5)
+        clear()
+
+        print(Role())
+        sleep(5)
+        clear()
+
+        print(Role())
+        sleep(5)
+        clear()
+
+        print(Rol())
+        sleep(5)
+        clear()
+
+    if Choice == 'Animal':
+        random1 = random.choice(Animal)
+        
+
+        print(Role())
+        sleep(5)
+        clear()
+
+        print(Role())
+        sleep(5)
+        clear()
+
+        print(Role())
+        sleep(5)
+        clear()
+
+        print(Rol())
+        sleep(5)
+        clear()
+
+    if Choice == 'Sport':
+        random1 = random.choice(Sport)
+        
+
+        print(Role())
+        sleep(5)
+        clear()
+
+        print(Role())
+        sleep(5)
+        clear()
+
+        print(Role())
+        sleep(5)
+        clear()
+
+        print(Rol())
+        sleep(5)
+        clear()
+
+
+if answer == '5' :
+    print("Choose what you want the topic to be")
+    Choice = input("Fruit, Animal, Sport : ")
+
+    if Choice == 'Fruit':
+        random1 = random.choice(Fruit)
+        
+
+        print(Role())
+        sleep(5)
+        clear()
+
+        print(Role())
+        sleep(5)
+        clear()
+
+        print(Role())
+        sleep(5)
+        clear()
+
+        print(Rol())
+        sleep(5)
+        clear()
+
+        print(Rol())
+        sleep(5)
+        clear()
+
+    if Choice == 'Animal':
+        random1 = random.choice(Animal)
+        
+
+        print(Role())
+        sleep(5)
+        clear()
+
+        print(Role())
+        sleep(5)
+        clear()
+
+        print(Role())
+        sleep(5)
+        clear()
+
+        print(Rol())
+        sleep(5)
+        clear()
+
+        print(Rol())
+        sleep(5)
+        clear()
+
+    if Choice == 'Sport':
+        random1 = random.choice(Sport)
+        
+
+        print(Role())
+        sleep(5)
+        clear()
+
+        print(Role())
+        sleep(5)
+        clear()
+
+        print(Role())
+        sleep(5)
+        clear()
+
+        print(Rol())
+        sleep(5)
+        clear()
+
+        print(Rol())
+        sleep(5)
+        clear()
+
+
+if answer == '6' :
+    print("Choose what you want the topic to be")
+    Choice = input("Fruit, Animal, Sports : ")
+    clear()
+
+    if Choice == 'Fruit':
+        random1 = random.choice(Fruit)
+        
+
+        print(Role())
+        sleep(5)
+        clear()
+
+        print(Role())
+        sleep(5)
+        clear()
+
+        print(Role())
+        sleep(5)
+        clear()
+
+        print(Rol())
+        sleep(5)
+        clear()
+
+        print(Rol())
+        sleep(5)
+        clear()
+
+        print(Role())
+        sleep(5)
+        clear()
+
+    if Choice == 'Animal':
+        random1 = random.choice(Animal)
+
+
+        print(Role())
+        sleep(5)
+        clear()
+
+        print(Role())
+        sleep(5)
+        clear()
+
+        print(Role())
+        sleep(5)
+        clear()
+
+        print(Role())
+        sleep(5)
+        clear()
+
+        print(Rol())
+        sleep(5)
+        clear()
+
+        print(Rol())
+        sleep(5)
+        clear()
+
+    if Choice == 'Sport':
+        random1 = random.choice(Sport)
+        
+        print(Role())
+        sleep(5)
+        clear()
+
+        print(Role())
+        sleep(5)
+        clear()
+
+        print(Role())
+        sleep(5)
+        clear()
+
+        print(Role())
+        sleep(5)
+        clear()
+
+        print(Rol())
+        sleep(5)
+        clear()
+
+        print(Rol())
+        sleep(5)
+        clear()
